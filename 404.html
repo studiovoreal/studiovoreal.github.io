@@ -1,0 +1,1 @@
+<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8" /> <script> const path = location.pathname; if (path.startsWith("/video/")) { const slug = path.replace("/video/", "").replace(/\/$/, ""); location.replace(`/video/?v=${slug}`); } else { location.replace("/"); } </script> </head> <body></body> </html>
