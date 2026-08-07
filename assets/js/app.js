@@ -19,6 +19,7 @@ async function loadVideos() {
     grouped[video.categoria][video.subcategoria].push(video);
   });
 
+  // Limpiar contenido inicial
   app.innerHTML = "";
 
   // Renderizar categorías
@@ -26,8 +27,8 @@ async function loadVideos() {
     const categoryEl = document.createElement("section");
     categoryEl.className = "category";
 
-    // SOLO una vez el nombre de la categoría
-    categoryEl.innerHTML = `<h2 class="section-title">${categoria}</h2>`;
+    // Mostrar SOLO la categoría (la que viene del panel Admin / videos.json)
+    categoryEl.innerHTML = `<h2>${categoria}</h2>`;
 
     // Renderizar subcategorías
     Object.entries(subcategorias).forEach(([subcategoria, items]) => {
@@ -40,13 +41,16 @@ async function loadVideos() {
 
           <div class="video-content">
             <div class="video-title">${v.titulo}</div>
+
+            <div class="video-desc">
+              ${v.descripcion || ""}
+            </div>
           </div>
         </a>
       `).join("");
 
-      // SOLO la subcategoría
       subEl.innerHTML = `
-        <h3 class="sub-title">${subcategoria}</h3>
+        <h3>${subcategoria}</h3>
         <div class="video-grid">${grid}</div>
       `;
 
