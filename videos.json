@@ -1,1 +1,9 @@
-[ { "slug": "bienvenida", "categoria": "Capacitaciones", "subcategoria": "Capacitación Shows Privados", "titulo": "Bienvenida", "descripcion": "Introducción a la capacitación", "onedrive": "https://onedrive.live.com/xxxxx", "thumbnail": "assets/img/placeholder.jpg" } ]
+{
+  "slug": "parte-1-sexy-dance-y-closeup",
+  "categoria": "CAPACITACIONES",
+  "subcategoria": "Show Privado",
+  "titulo": "Parte 1 Sexy Dance y CloseUp",
+  "descripcion": "",
+  "onedrive": "https://1drv.ms/v/c/4f58be5315f6212d/IQBuOB5ER8GdQII8NfIi-JPHAZymRIDUIG-7rnBxCDV2a3Y?e=pVTt7U",
+  "thumbnail": "assets/img/placeholder.jpg"
+},
