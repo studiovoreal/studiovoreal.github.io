@@ -1,5 +1,5 @@
 async function loadVideos() {
-  const res = await fetch("/videos.json");
+  const res = await fetch("videos.json");
   const videos = await res.json();
 
   const app = document.getElementById("app");
