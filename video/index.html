@@ -18,8 +18,9 @@
 
   <script>
     async function loadVideo() {
-      const path = location.pathname;
-      const slug = path.split('/').filter(Boolean).pop();
+      // Obtener slug desde ?v=slug
+      const params = new URLSearchParams(location.search);
+      const slug = params.get('v');
 
       const res = await fetch('/videos.json');
       const videos = await res.json();
